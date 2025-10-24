@@ -1,0 +1,520 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/roboto.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: clamp(12px, 1vw, 16px);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+}
+nav .part-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 1.2rem 0;
+  background: linear-gradient(124.64deg, #027dfd, #833ef2);
+}
+nav .part-1 h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+}
+nav .part-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  justify-content: space-between;
+  padding: 1.7rem 2rem;
+  width: 100%;
+}
+nav .part-2 .left-logo img {
+  width: 100%;
+  height: 2.8rem;
+}
+nav .part-2 .right h4,
+nav .part-2 .right button {
+  display: none;
+}
+nav .part-2 .right h4.hamburger {
+  display: block;
+}
+nav .part-2 .right h4.hamburger i {
+  font-size: 1.5rem;
+}
+
+section.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 16rem 2rem;
+  padding-bottom: 10rem;
+  background-image: linear-gradient(35deg, rgb(252, 221, 232), rgb(243, 252, 255) 60%);
+  text-align: center;
+}
+section.hero .top {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  max-width: 1200px;
+}
+section.hero .top .img-container img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.hero .top .text h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+section.hero h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+  max-width: 1200px;
+}
+
+section.view-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  padding: 6rem 2rem;
+  max-width: 1500px;
+}
+section.view-2 .elem {
+  display: flex;
+  flex-direction: column;
+  gap: 5.5rem;
+}
+section.view-2 .elem .text {
+  border-top: 4px solid #e8eaed;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section.view-2 .elem .text h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+section.view-2 .elem .text p {
+  width: 88%;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+section.view-2 .elem img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 600px;
+}
+
+section.view-3 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  padding: 5rem 2rem;
+  max-width: 1400px;
+}
+section.view-3 .content .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.view-3 .content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section.view-3 .content .text .top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+section.view-3 .content .text .top h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.65);
+}
+section.view-3 .content .text .top h2 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+section.view-3 .content .text .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section.view-3 .content .text .bottom p {
+  width: 90%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.5;
+  line-height: 2rem;
+}
+section.view-3 .content .text .bottom .btn-right-text {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+section.view-3 .content .text .bottom .btn-right-text button {
+  padding: 1rem 3rem;
+  border: 1px solid #0468d7;
+  background-color: white;
+  border-radius: 2rem;
+  color: #0468d7;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all ease 0.3s;
+  white-space: nowrap;
+}
+section.view-3 .content .text .bottom .btn-right-text button:hover {
+  background-color: #0468d7;
+  color: white;
+}
+section.view-3 .content .text .bottom .btn-right-text h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+section.view-3 .content .text .bottom .btn-right-text h5 span {
+  font-size: 1.2rem;
+  transition: padding-left 0.3s ease;
+}
+section.view-3 .content .text .bottom .btn-right-text h5:hover span {
+  padding-left: 0.5rem;
+}
+
+section.view-4,
+.view {
+  background: linear-gradient(35deg, #fcfce2 40%, #f5fbfe 90%);
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5rem 2rem;
+}
+section.view-4 .content,
+.view .content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 1150px;
+}
+section.view-4 .content .img-container img,
+.view .content .img-container img {
+  max-width: 600px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.view-4 .content .text,
+.view .content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section.view-4 .content .text .top,
+.view .content .text .top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+section.view-4 .content .text .top h4,
+.view .content .text .top h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.65);
+}
+section.view-4 .content .text .top h2,
+.view .content .text .top h2 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+section.view-4 .content .text .bottom,
+.view .content .text .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section.view-4 .content .text .bottom p,
+.view .content .text .bottom p {
+  width: 90%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.5;
+  line-height: 2rem;
+}
+section.view-4 .content .text .bottom button,
+.view .content .text .bottom button {
+  padding: 1rem 3rem;
+  border: 1px solid #0468d7;
+  background-color: #0468d7;
+  border-radius: 2rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all ease 0.3s;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+section.view-5 {
+  background: white;
+}
+section.view-5 .content {
+  max-width: 1100px;
+}
+section.view-5 .content .text .bottom button {
+  padding: 1rem 3rem;
+  border: 1px solid #0468d7;
+  background-color: white;
+  border-radius: 2rem;
+  color: #0468d7;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+section.view-5 .content .text .bottom button:hover {
+  background-color: #0468d7;
+  color: white;
+}
+
+section.view-6 .content {
+  max-width: 1150px;
+}
+
+section.view-7 {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5rem 2rem;
+}
+section.view-7 .container-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #042449;
+  width: 100%;
+  max-width: 1200px;
+  height: 380px;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+section.view-7 .container-box img {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.view-7 .container-box .text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 3.5rem;
+}
+section.view-7 .container-box .text h2 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+section.view-7 .container-box .text p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+section.view-7 .container-box .text .bottom {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+section.view-7 .container-box .text .bottom button {
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  color: #0468d7;
+}
+section.view-7 .container-box .text .bottom h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+section.view-7 .container-box .text .bottom h5 span {
+  transition: all ease 0.3s;
+}
+section.view-7 .container-box .text .bottom h5:hover span {
+  padding-left: 0.5rem;
+}
+
+@media (min-width: 1025px) {
+  nav .part-2 {
+    padding: 1.5rem 3rem;
+  }
+  nav .part-2 .left-logo img {
+    height: 2.6rem;
+  }
+  nav .part-2 .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  nav .part-2 .right h4,
+  nav .part-2 .right button {
+    display: block;
+  }
+  nav .part-2 .right h4.hamburger {
+    display: none;
+  }
+  nav .part-2 .right h4 {
+    padding: 1rem;
+    border-radius: 10rem;
+    font-weight: 400;
+    transition: all ease 0.3s;
+  }
+  nav .part-2 .right h4 i {
+    margin-left: -0.5rem;
+    font-weight: 100;
+  }
+  nav .part-2 .right h4.blue-text {
+    color: blue;
+  }
+  nav .part-2 .right h4:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+    color: blue;
+  }
+  nav .part-2 .right button {
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    background-color: #0568D7;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  section.hero {
+    padding: 15rem 10rem;
+    padding-bottom: 8.5rem;
+  }
+  section.hero .top {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+  }
+  section.hero .top .text h1 {
+    font-size: 4.6rem;
+    padding-left: 3rem;
+  }
+  section.hero h2 {
+    font-size: 2.4rem;
+    padding: 0 7rem;
+    padding-top: 6.5rem;
+  }
+  section.view-2 {
+    flex-direction: row;
+    padding: 4.5rem 10rem;
+  }
+  section.view-2 .elem .text p {
+    font-size: 1.3rem;
+  }
+  section.view-3 .content {
+    padding: 4rem 8rem;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  section.view-3 .content .img-container,
+  section.view-3 .content .text {
+    width: 50%;
+  }
+  section.view-3 .content .img-container {
+    max-width: 31vw;
+  }
+  section.view-3 .content .text {
+    padding-left: 5rem;
+  }
+  section.view-4,
+  .view {
+    padding: 4rem 8rem;
+    padding-left: 11rem;
+  }
+  section.view-4 .content,
+  .view .content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+  }
+  section.view-4 .content .img-container,
+  section.view-4 .content .text,
+  .view .content .img-container,
+  .view .content .text {
+    width: 50%;
+  }
+  section.view-4 .content .img-container,
+  .view .content .img-container {
+    max-width: 31vw;
+  }
+  section.view-5 .content {
+    flex-direction: row-reverse;
+  }
+  section.view-7 .container-box {
+    height: 320px;
+  }
+  section.view-7 .container-box .text {
+    gap: 0.7rem;
+  }
+  section.view-7 .container-box .text .bottom {
+    padding-top: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
